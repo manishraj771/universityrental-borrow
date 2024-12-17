@@ -3,7 +3,7 @@ import { Route ,Routes, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Layout from './components/Layout';
 import ListingClientWithSuspense from './pages/ListingPage';
-import TripsPage from './pages/TripsPage';
+import TripsPage from './pages/BookingsPage';
 import FavoritesPage from './pages/FavoritesPage';
 import PropertiesPage from './pages/PropertiesPage';
 import ReservationsPage from './pages/ReservationsPage';

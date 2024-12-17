@@ -9,11 +9,11 @@ import ListingCard from "./ListingCard";
 import { BACKEND_URL } from "../config";
 
 
-interface TripsClientProps {
+interface BookingsClientProps {
   reservations: [],
 }
 
-const TripsClient:React.FC<TripsClientProps> = ({
+const BookingsClient:React.FC<BookingsClientProps> = ({
   reservations,
 }) => {
   const navigate = useNavigate();
@@ -69,4 +69,4 @@ const TripsClient:React.FC<TripsClientProps> = ({
    );
 }
 
-export default TripsClient;
+export default BookingsClient;

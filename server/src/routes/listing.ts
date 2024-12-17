@@ -10,9 +10,9 @@ router.get('/' , async(req:Request , res:Response) =>{
   try{
     const {
       userId,
-      roomCount,
+      //roomCount,
       guestCount,
-      bathroomCount,
+      //bathroomCount,
       locationValue,
       startDate,
       endDate,
@@ -30,11 +30,11 @@ router.get('/' , async(req:Request , res:Response) =>{
       query.category = category;
     }
   
-    if (roomCount) {
-      query.roomCount = {
-        gte: +roomCount
-      }
-    }
+    // if (roomCount) {
+    //   query.roomCount = {
+    //     gte: +roomCount
+    //   }
+    // }
   
     if (guestCount) {
       query.guestCount = {
@@ -42,11 +42,11 @@ router.get('/' , async(req:Request , res:Response) =>{
       }
     }
   
-    if (bathroomCount) {
-      query.bathroomCount = {
-        gte: +bathroomCount
-      }
-    }
+    // if (bathroomCount) {
+    //   query.bathroomCount = {
+    //     gte: +bathroomCount
+    //   }
+    // }
   
     if (locationValue) {
       query.locationValue = locationValue;

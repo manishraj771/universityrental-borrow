@@ -13,8 +13,8 @@ export interface User {
 export interface ListingsParams {
   userId?: string;
   guestCount?: number;
-  roomCount?: number;
-  bathroomCount?: number;
+  //roomCount?: number;
+  //bathroomCount?: number;
   startDate?: string;
   endDate?: string;
   locationValue?: string;

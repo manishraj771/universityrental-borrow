@@ -1,6 +1,7 @@
 import React from "react";
 import EmptyState from "../components/EmptyState";
-import TripsClient from "../components/TripsClient";
+//import TripsClient from "../components/BookingsClient";
+import BookingsClient from "../components/BookingsClient";
 import { useRecoilValue } from "recoil";
 import { ListingReservationState, userAuthState } from "../recoil/atoms";
 
@@ -28,7 +29,7 @@ const ReservationsPage:React.FC =  () => {
   }
 
   return (
-    <TripsClient
+    <BookingsClient
       reservations={reservations}
     />
   );

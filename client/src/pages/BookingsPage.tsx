@@ -1,9 +1,10 @@
 import { useRecoilValue } from "recoil";
 import EmptyState from "../components/EmptyState";
 import { ListingReservationState, userAuthState } from "../recoil/atoms";
-import TripsClient from "../components/TripsClient";
+import BookingsClient from "../components/BookingsClient";
+//import TripsClient from "../components/BookingsClient";
 
-const TripsPage:React.FC<any> = () => {
+const BookingsPage:React.FC<any> = () => {
   const userState  = useRecoilValue(userAuthState)
 
   if (!userState.isAuthenticated) {
@@ -20,9 +21,9 @@ const TripsPage:React.FC<any> = () => {
     );
   }
   return (
-    <TripsClient reservations={reservations}/>
+    <BookingsClient reservations={reservations}/>
   );
 }
  
-export default TripsPage;
+export default BookingsPage;
 
